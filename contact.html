@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Keven's Blog</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+header nav { background:#000; }
+header nav ul { margin:0; padding:8px 12px; list-style:none; display:flex; gap:12px; }
+header nav a { color:#fff; text-decoration:none; }
+</style>
+
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Keven's Blog</a></h1>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <article>
+    <header><h2>Contact</h2></header>
+
+    <form action="#" method="post">
+      <p>
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text" required>
+      </p>
+
+      <p>
+        <label for="email">Email</label><br>
+        <input id="email" name="email" type="email" required>
+      </p>
+
+      <p>
+        <label for="reason">Reason for contact</label><br>
+        <select id="reason" name="reason" required>
+          <option value="" selected disabled>Choose…</option>
+          <option value="hi">Saying hi</option>
+          <option value="contractor">Looking for a contractor</option>
+          <option value="interview">Interested in an interview</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </p>
+
+      <p><button type="submit">Submit</button></p>
+    </form>
+  </article>
+</main>
+
+<footer><p>&copy; <span id="year">2025</span> Keven Hypnarowicz</p></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

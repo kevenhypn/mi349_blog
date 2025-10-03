@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Keven's Blog — Home</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+header nav { background:#000; }
+header nav ul { margin:0; padding:8px 12px; list-style:none; display:flex; gap:12px; }
+header nav a { color:#fff; text-decoration:none; }
+</style>
+
+</head>
+<body>
+<header>
+  <h1><a href="index.html">Keven's Blog</a></h1>
+  <nav aria-label="Primary">
+    <ul>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <article>
+    <header>
+      <h2>My PC Build and Why It Still Works for Me</h2>
+      <p>
+        <address class="byline" style="display:inline">By Keven Hypnarowicz</address> •
+        <time datetime="2025-09-28">September 28, 2025</time>
+      </p>
+    </header>
+
+    <figure>
+      <img src="images/pc.jpg" alt="My PC with Lian Li connectable fans lit up" width="400" height="500">
+      <figcaption>Built in August 2022. Clean wiring. Bright fans.</figcaption>
+    </figure>
+
+    <p>
+      I built this rig back in August of 2022. The original parts were a Ryzen 9 5900X, an EVGA GTX 1080, and 32 GB of RAM.
+      I wanted a PC that could handle school work, light editing, and games without sounding like a jet.
+    </p>
+    <p>
+      The 5900X gave me strong multithreaded performance, and the 1080 was good enough 
+      for 1080p and some 1440p titles with settings tuned.
+      I used Lian Li connectable fans so I could keep cables tidy and still get solid airflow.
+    </p>
+    <p>
+      That small decision made building easier and the inside of the case cleaner.
+      It also made later changes simple because I did not have to fight a spaghetti of fan cables.
+      Since then I have only made one major change: 
+    </p>
+    <p>
+      I upgraded the GPU to a 4070.
+      Everything else stayed the same because it still meets my needs.
+      The CPU still does great with games and background tasks. 
+      The memory is enough for my browser, IDE, and a game at the same time.
+    </p>
+    <p>
+      The 4070 pushed frame rates up and added DLSS support, which is nice for newer games.
+      I like the balance right now: good performance, good thermals.
+      If I change anything next, it would probably be the storage.
+    </p>
+
+    <h3>Parts snapshot</h3>
+    <table>
+      <caption>Key components - If I upgraded them</caption>
+      <thead>
+        <tr><th scope="col">Component</th><th scope="col">Model</th><th scope="col">Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>CPU</td><td>Ryzen 9 5900X</td><td>Original</td></tr>
+        <tr><td>GPU</td><td>GeForce RTX 4070</td><td>Upgraded</td></tr>
+        <tr><td>Memory</td><td>32 GB DDR4</td><td>Original</td></tr>
+      </tbody>
+    </table>
+  </article>
+
+  <hr style="border:0;height:2px;background:#000">
+
+  <article>
+    <header>
+      <h2>Lions vs. Ravens: Roaring Win on Monday Night</h2>
+      <p>
+        <address class="byline" style="display:inline">By Keven Hypnarowicz</address> •
+        <time datetime="2025-09-29">September 29, 2025</time>
+      </p>
+    </header>
+
+    <figure>
+      <img src="images/lions-ravens.jpg" alt="Detroit Lions celebrating after a score" width="600" height="400">
+      <figcaption>Final: Lions 38 — Ravens 30.</figcaption>
+    </figure>
+
+    <p>
+      The Lions showed up and got a 38–30 win over the Ravens on Monday Night Football. The offense
+      kept the pressure on all game, and the defense did just enough in
+      the key spots to hold on to the lead. The best part was how steady and easy the drives looked.
+    </p>
+    <p>
+      Even when the Ravens tried to flip momentum, the response was calm play calls and clean execution. 
+      Third downs were the difference. Convert those and you control tempo, keep the 
+      defense rested, and squeeze the clock late.
+    </p>
+    <p>
+      The box score tells one story, but watching told another: the team looked confident.
+      That confidence showed up in protection, in yards after catch,
+      and in how they closed the fourth quarter. If they keep that same balance and efficiency,
+    </p>
+    <p>
+      passing, a few big and explosive runs, and mistake free special teams, this is what will become
+      the blueprint for Detroit's future.    </p>
+    <p>
+      It was not perfect, but it was the kind of win that makes Tuesday feel better in Detroit. 
+      The next test will be consistency. Making sure to stay at this level of play
+      matters more than a single primetime result.
+    </p>
+  </article>
+
+  <hr style="border:0;height:2px;background:#000">
+
+  <section aria-labelledby="signup">
+    <h2 id="signup">Email newsletter</h2>
+    <form action="#" method="post">
+      <p>
+        <label for="nl-email">Email</label><br>
+        <input id="nl-email" type="email" name="email" required>
+      </p>
+      <p><button type="submit">Subscribe</button></p>
+      <p><small>Demo only. No data is sent.</small></p>
+    </form>
+  </section>
+</main>
+
+<footer><p>&copy; <span id="year">2025</span> Keven Hypnarowicz</p></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
