@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — Keven's Blog</title>
   <link rel="stylesheet" href="style.css">
-<style>
-header nav { background:#000; }
-header nav ul { margin:0; padding:8px 12px; list-style:none; display:flex; gap:12px; }
-header nav a { color:#fff; text-decoration:none; }
-</style>
-
 </head>
 <body>
-<header>
-  <h1><a href="index.html">Keven's Blog</a></h1>
-  <nav aria-label="Primary">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<div class="site">
+
+<header class="site-header">
+  <div class="brand">
+    <h1 id="site-title"><a href="index.html">Keven's Blog</a></h1>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main id="content">
@@ -62,6 +60,8 @@ header nav a { color:#fff; text-decoration:none; }
 </main>
 
 <footer><p>&copy; <span id="year">2025</span> Keven Hypnarowicz</p></footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+</div>
 </body>
 </html>

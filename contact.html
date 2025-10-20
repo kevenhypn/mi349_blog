@@ -5,62 +5,74 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — Keven's Blog</title>
   <link rel="stylesheet" href="style.css">
-<style>
-header nav { background:#000; }
-header nav ul { margin:0; padding:8px 12px; list-style:none; display:flex; gap:12px; }
-header nav a { color:#fff; text-decoration:none; }
-</style>
-
 </head>
 <body>
-<header>
-  <h1><a href="index.html">Keven's Blog</a></h1>
-  <nav aria-label="Primary">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<div class="site">
+
+<header class="site-header">
+  <div class="brand">
+    <h1 id="site-title"><a href="index.html">Keven's Blog</a></h1>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main id="content">
-  <article>
-    <header><h2>Contact</h2></header>
+<div class="layout">
+  <main id="content" class="content">
+    <article>
+      <header><h2>Contact</h2></header>
 
-    <form name="contact" method="POST" data-netlify="true" action="thanks.html">
-      <input type="hidden" name="form-name" value="contact">
-      <p>
-        <label for="name">Name</label><br>
-        <input id="name" name="name" type="text" required>
-      </p>
+      <form name="contact" method="POST" data-netlify="true" action="thanks.html">
+        <input type="hidden" name="form-name" value="contact">
 
-      <p>
-        <label for="email">Email</label><br>
-        <input id="email" name="email" type="email" required>
-      </p>
+        <div class="form-grid">
+          <p class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </p>
+          <p class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </p>
+          <p class="form-field">
+            <label for="reason">Reason for contact</label>
+            <select id="reason" name="reason" required>
+              <option value="" selected disabled>Choose…</option>
+              <option value="hi">Saying hi</option>
+              <option value="contractor">Looking for a contractor</option>
+              <option value="interview">Interested in an interview</option>
+            </select>
+          </p>
+        </div>
 
-      <p>
-        <label for="reason">Reason for contact</label><br>
-        <select id="reason" name="reason" required>
-          <option value="" selected disabled>Choose…</option>
-          <option value="hi">Saying hi</option>
-          <option value="contractor">Looking for a contractor</option>
-          <option value="interview">Interested in an interview</option>
-        </select>
-      </p>
+        <p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </p>
 
-      <p>
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </p>
+        <p><button type="submit">Submit</button></p>
+      </form>
+    </article>
+  </main>
 
-      <p><button type="submit">Submit</button></p>
-    </form>
-  </article>
-</main>
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li><a href="index.html">Latest post</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </aside>
+</div>
 
 <footer><p>&copy; <span id="year">2025</span> Keven Hypnarowicz</p></footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+</div>
 </body>
 </html>

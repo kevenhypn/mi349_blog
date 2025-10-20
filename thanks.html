@@ -7,10 +7,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1><a href="index.html">Keven's Blog</a></h1></header>
-<main id="content">
-  <h2>Thanks — your form was submitted.</h2>
-  <p><a href="index.html">Go back home</a></p>
-</main>
+<div class="site">
+
+<header class="site-header">
+  <div class="brand">
+    <h1 id="site-title"><a href="index.html">Keven's Blog</a></h1>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <main id="content" class="content">
+    <h2 class="m-0">Thanks — your form was submitted.</h2>
+    <p><a href="index.html">Go back home</a></p>
+  </main>
+
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li><a href="index.html">Latest post</a></li>
+      <li><a href="about.html">About me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </aside>
+</div>
+
+<footer><p>© <span id="year">2025</span> Keven Hypnarowicz</p></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+</div>
 </body>
 </html>
