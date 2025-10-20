@@ -22,42 +22,53 @@
   </div>
 </header>
 
-<main id="content">
-  <article>
-    <header><h2>About Keven Hypnarowicz</h2></header>
+<div class="layout">
+  <main id="content" class="content">
+    <article>
+      <header><h2>About Keven Hypnarowicz</h2></header>
 
-    <figure>
-      <img src="images/me.jpg" alt="Photo of Keven Hypnarowicz" height="500" width="500">
-      <figcaption>Information Science @ MSU</figcaption>
-    </figure>
+      <figure class="float-right">
+        <img src="images/me.jpg" alt="Photo of Keven Hypnarowicz" height="500" width="500">
+        <figcaption>Information Science @ MSU</figcaption>
+      </figure>
 
-    <p>
-      I’m Keven Hypnarowicz. I study Information Science at Michigan State University.
-      I like clear and simple tools that are easy to use.
-      I enjoy learning by doing, so I am a very hands-on learner.
-      I follow new tech because I like seeing how people are solving problems with AI.
-    </p>
-    <p>
-      In my free time I play games like Valorant, Fortnite, Overwatch, Apex Legends, and Marvel Rivals.
-      I also watch Detroit sports, especially the Lions and the Tigers.
-      Games and sports both help me reset.
-      I try to keep my setup clean and my process simple, so I can spend more time making and less time fixing.
-    </p>
-    <p>
-      This blog is a place to post short updates, notes from projects, and things I am testing.
-      I keep the writing direct and the pages light.
-      If you like tech, games, or clean UI, you will probably find something here that fits.
-    </p>
+      <p>
+        I’m Keven Hypnarowicz. I study Information Science at Michigan State University.
+        I like clear and simple tools that are easy to use.
+        I enjoy learning by doing, so I am a very hands-on learner.
+        I follow new tech because I like seeing how people are solving problems with AI.
+      </p>
+      <p>
+        In my free time I play games like Valorant, Fortnite, Overwatch, Apex Legends, and Marvel Rivals.
+        I also watch Detroit sports, especially the Lions and the Tigers.
+        Games and sports both help me reset.
+        I try to keep my setup clean and my process simple, so I can spend more time making and less time fixing.
+      </p>
+      <p>
+        This blog is a place to post short updates, notes from projects, and things I am testing.
+        I keep the writing direct and the pages light.
+        If you like tech, games, or clean UI, you will probably find something here that fits.
+      </p>
 
-    <h3>Games where I reached the top rank</h3>
+      <h3>Games where I reached the top rank</h3>
+      <ul>
+        <li>Fortnite</li>
+        <li>Valorant</li>
+        <li>Apex Legends</li>
+        <li>Marvel Rivals</li>
+      </ul>
+    </article>
+  </main>
+
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
     <ul>
-      <li>Fortnite</li>
-      <li>Valorant</li>
-      <li>Apex Legends</li>
-      <li>Marvel Rivals</li>
+      <li><a href="index.html">Latest post</a></li>
+      <li><a href="about.html" aria-current="page">About me</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </article>
-</main>
+  </aside>
+</div>
 
 <footer><p>&copy; <span id="year">2025</span> Keven Hypnarowicz</p></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
